@@ -1,0 +1,27 @@
+.bannerBg::after {
+    background: rgba(0, 0, 0, 0) url("../../assets/images/banner-bg3.svg") no-repeat scroll left center;
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -400px;
+    width: 900px;
+    height: 900px;
+    z-index: -1;
+    opacity: 0.2;
+    animation: bannerBg-spin infinite 20s linear;
+    /* rotation 50s linear infinite */
+}
+.carousel
+{
+    height: 100vh;
+}
+
+@keyframes bannerBg-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
